@@ -12,8 +12,10 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
-
-
+admitted = find(y);
+notAdmitted = find(~y);
+plot(X(admitted, 1), X(admitted, 2), 'k+', 'LineWidth', 2);
+plot(X(notAdmitted, 1), X(notAdmitted, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 
 
